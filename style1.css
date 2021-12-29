@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+}
+/*colours of global classes  of cases*/
+
+.Active{
+    background-color: var(--cyan);
+}
+.confirm{
+    background-color: var(--yellow);
+    color: black;
+}
+.Cured{
+    background-color: var(--green);
+}
+.Death{
+    background-color: var(--red);
+}
+
+
+#container{
+    position: absolute;
+    min-height: 150vh;
+    width: 100vw;
+}
+
+/* section top fixed */
+#staytop{
+    position: fixed;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--white);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+#staytop>*{
+    /* border: 1px solid red; */
+}
+#cov{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-left: 15px;
+}
+#ind{
+    font-family: Verdana;
+    font-size: 1.2em;
+}
+.casbut{
+    display: inline-block;
+    padding: 5px;
+}
+.tpbox{
+    /* background-color: red; */
+    padding: 4px 10px;
+    margin: 0px 1px;
+    width: 40px;
+    border-radius: 4px;
+    font-family:   Arial, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+#creator{
+    display: inline-block;
+    position: absolute;
+    right: 3vw;
+}

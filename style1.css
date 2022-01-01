@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat Alternates';
 }
 
 :root{
@@ -25,7 +26,7 @@
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --light: #f8f9fa;
+    --light: #f1f1f1;
     --dark: #343a40;
 
 }
@@ -82,7 +83,6 @@
     margin: 0px 2px;
     min-width: 30px;
     border-radius: 4px;
-    font-family: 'Montserrat Alternates', Arial, sans-serif;
     font-weight: 500;
     font-size: 17px;
 }
@@ -112,11 +112,10 @@
 #sec1{
     background-color: var(--light);
     min-height: 100px;
-    max-width: 100vw;
+    /* width: 100%; */
     padding: 130px 20px 80px 25px;
     font-size: 22px;
     font-weight: 400;
-    font-family: 'Montserrat Alternates', cursive, 'Partrick Hand';
 }
 #greet{
     padding: 5px 0px;
@@ -158,7 +157,6 @@
     padding: 20px 20px 40px;
     color: #660008;
     background-color: #f8d7da;
-    font-family: 'Montserrat Alternates';
     font-size: 1rem;
     border-radius: 5px;
     display: flex;
@@ -194,7 +192,6 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-family: 'Montserrat Alternates';
 }
 .tabs{
     width: 350px;
@@ -228,4 +225,49 @@
 }
 #t4:hover{
     background-color: #aa2b38;
+}
+
+/* Do and dnt table*/  /* Symptoms table*/
+#do-n-dnt, #symp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+#table-1, #table-2{
+    border-collapse: collapse;
+    width: 90%;
+}
+th{
+    font-weight: 600;
+}
+th, td{
+    border: 2px solid #d1d1d1;
+    padding: 20px 10px;
+
+}
+.fill{
+    background-color: var(--light);
+}
+/* symp td elements*/
+#symp td > *{
+    margin: 5px 10px 20px;
+    line-height: 25px;
+}
+#symp td strong{
+    font-weight: 600;
+}
+#symp td ul{
+    margin-left: 50px;
+    margin-top: 0;
+}
+#symp td a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#symp-p2{
+    margin-bottom: 0px;
 }

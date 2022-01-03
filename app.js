@@ -1,3 +1,4 @@
+
 const reportClose = document.getElementById('close');
 
 reportClose.addEventListener('click' , () => {

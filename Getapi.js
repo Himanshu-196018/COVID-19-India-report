@@ -1,15 +1,3 @@
-
-const apiKey = '610e8514c9d243149a0df8033857f0c0';
-var topic = 'covid 19';
-
-var url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
-
-var req = new Request(url);
-
-// fetch(req)
-//     .then(function(response) {
-//         console.log(response.json());
-//     })
 // India cases......
 const confirmedCasesIndia = 34922882;
 const activeCasesIndia = 145582;
@@ -436,3 +424,27 @@ document.querySelector('#act-36').innerHTML = act_36;
 document.querySelector('#Cur-36').innerHTML = cur_36;
 document.querySelector('#Dea-36').innerHTML = dea_36;
 
+
+const apiKey = '610e8514c9d243149a0df8033857f0c0';
+var topic = 'covid 19 India';
+
+var url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
+
+var req = new Request(url);
+
+fetch(req)
+    .then(function(response) {
+        return response.json();
+    }).then((getAPI) =>{
+        console.log(getAPI.articles[0])
+        const disNews = document.getElementById('disNews');
+        for(var index=1; index < 4; index++){
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.setAttribute('href', getAPI.articles[index].url);
+            a.setAttribute('target','_blank');
+            a.textContent = getAPI.articles[index].title;
+            li.appendChild(a);
+            disNews.appendChild(li);
+        }
+    });
